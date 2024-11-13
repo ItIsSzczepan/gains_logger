@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:gains_logger/domain/core/entities/app_error.dart';
+import 'package:gains_logger/domain/entities/app_error.dart';
 
 part 'data_state.freezed.dart';
 

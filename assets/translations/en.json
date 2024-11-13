@@ -1,3 +1,6 @@
 {
-  "appName": "Gains Logger"
+  "appName": "Gains Logger",
+  "exercisesTabLabel": "Exercises",
+  "workoutsTabLabel": "Workout",
+  "profileTabLabel": "Profile"
 }

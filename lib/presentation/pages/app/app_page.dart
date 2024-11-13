@@ -1,7 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:gains_logger/presentation/core/constants/localiation_constants.dart';
-import 'package:gains_logger/presentation/core/generated/locale_keys.g.dart';
+import 'package:gains_logger/presentation/constants/localiation_constants.dart';
+import 'package:gains_logger/presentation/generated/locale_keys.g.dart';
+import 'package:gains_logger/presentation/routing/routing.dart';
 
 class AppPage extends StatelessWidget {
   const AppPage({
@@ -14,11 +15,11 @@ class AppPage extends StatelessWidget {
       supportedLocales: LocalizationConstants.supportedLocales,
       path: LocalizationConstants.assetPath,
       child: Builder(
-        builder: (context) => MaterialApp(
+        builder: (context) => MaterialApp.router(
           localizationsDelegates: context.localizationDelegates,
           supportedLocales: context.supportedLocales,
           locale: context.locale,
-          home: const MyHomePage(),
+          routerConfig: Routing.router(),
         ),
       ),
     );
