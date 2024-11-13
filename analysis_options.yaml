@@ -1,0 +1,19 @@
+include: package:lint/analysis_options.yaml
+
+analyzer:
+  exclude: [
+    lib/**/*.g.dart,
+    lib/presentation/generated/**,
+  ]
+
+linter:
+  rules:
+    always_declare_return_types: true
+    avoid_bool_literals_in_conditional_expressions: false
+    avoid_classes_with_only_static_members: false
+    library_private_types_in_public_api: false
+    prefer_single_quotes: true
+    unnecessary_lambdas: true
+    unnecessary_null_aware_operator_on_extension_on_nullable: false
+    unnecessary_parenthesis: false
+    use_key_in_widget_constructors: true
